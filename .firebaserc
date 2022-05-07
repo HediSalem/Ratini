@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ratini-df179": {
+      "hosting": {
+        "app": [
+          "ratini-df179"
+        ]
+      }
+    }
+  }
+}
