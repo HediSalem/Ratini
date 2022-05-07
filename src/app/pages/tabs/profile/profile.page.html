@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> </ion-content>
+
+<div class="middle-button-container">
+  <p style="text-align: center">
+    <ion-fab style="margin-top: -90px; margin-left: -30px">
+      <ion-fab-button style="--background: #ffffff" size="small">
+        <ion-icon name="search" style="color: #3f9b99" size="small"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </p>
+</div>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="allerRestaurant()" tab="home">
+      <ion-icon src="assets/restaurant_menu.svg"></ion-icon>
+    </ion-tab-button>
+
+    <!-- <ion-tab-button tab="search"> -->
+    <!-- <ion-icon src="assets/Location.svg"></ion-icon> -->
+    <!-- </ion-tab-button> -->
+    <ion-tab-button (click)="allerFavourite()" tab="profile">
+      <ion-icon src="assets/bookmark.svg"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="profile">
+      <ion-icon src="assets/account_circle.svg"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
