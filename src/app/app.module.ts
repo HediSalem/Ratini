@@ -11,6 +11,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppRate } from "@ionic-native/app-rate/ngx";
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
+import {AngularFirestoreModule} from "@angular/fire/firestore";
+
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyBtAOFRbxa7tLyP-FwaJWvqAMwuDSAJ7T0",
@@ -29,7 +32,7 @@ const firebaseConfig = {
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule,
+    AngularFireAuthModule,AngularFirestoreModule,
   ],
   providers: [
     StatusBar,

@@ -50,6 +50,12 @@ const routes: Routes = [
     loadChildren: () =>
       import("./pages/pages.module").then((m) => m.PagesPageModule),
   },
+       {
+    path: 'users',
+    loadChildren: () => import('./users/users.module').then( m => m.UsersPageModule)
+  },
+
+
 ];
 
 @NgModule({
